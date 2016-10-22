@@ -23,7 +23,7 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['miautube'])
 def send_video(message):
-    call("ytb" + message)
+    call("ytb" + message.text)
     bot.send_message(message.chat.id, "MiauTube")
 
 # Start the bot
