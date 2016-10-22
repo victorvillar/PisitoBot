@@ -1,6 +1,7 @@
 import telebot
 import os.path as path
 import sys
+from subprocess import call
 
 # Create bot with its token
 if not path.isfile("bot.token"):
@@ -19,6 +20,11 @@ bot.skip_pending = True
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.send_message(message.chat.id, "Soy el puto bot de idun")
+
+@bot.message_handler(commands=['miautube'])
+def send_video(message):
+    call("ytb" + message)
+    bot.send_message(message.chat.id, "MiauTube")
 
 # Start the bot
 print("Running...")
