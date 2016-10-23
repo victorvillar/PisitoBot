@@ -1,3 +1,17 @@
 Bot Raspberry para Pisito
 
 [[https://67.media.tumblr.com/tumblr_lrp034Tlly1r2aruco1_250.gif]]
+
+
+* Usage
+** miautube [youtube link]
+Sends a link of youtube and plays it, if it fails, it will be
+downloaded, played and deleted.
+** miautwitch [user] [quality]
+Sends an user and a quality (source, mobile, audio, etc.) and it will
+log in with its account and plays it.
+
+* Authors
+ - C# (@ironjanowar)
+- Ashida (@Ashida)
+- Fenrir(@vvillar)
